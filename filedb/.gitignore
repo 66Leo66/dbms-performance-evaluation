@@ -11,3 +11,6 @@
 /.ijwb/
 /.aswb/
 /.clwb/
+
+# Generated compile commands
+compile_commands.json
