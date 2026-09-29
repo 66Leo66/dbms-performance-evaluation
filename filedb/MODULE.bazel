@@ -1,9 +1,26 @@
-module(name = "filedb", version = "1.0")
+module(
+    name = "filedb",
+    version = "1.0",
+)
 
 bazel_dep(name = "rules_cc", version = "0.2.25")
 bazel_dep(name = "llvm", version = "0.8.24")
+bazel_dep(name = "fmt", version = "12.2.0")
+bazel_dep(name = "cli11", version = "2.6.2")
+
+bazel_dep(name = "spdlog", version = "1.17.0")
+
+# Hedron's Compile Commands Extractor for Bazel
+bazel_dep(name = "hedron_compile_commands", dev_dependency = True)
+git_override(
+    module_name = "hedron_compile_commands",
+    remote = "https://github.com/helly25/bazel-compile-commands-extractor.git",
+    commit = "078ba7675c05bea2666c92d9a8abe200d8547655",
+)
+
 
 llvm = use_extension("@llvm//extensions:llvm.bzl", "llvm")
 llvm.version(llvm_version = "23.1.0")
+use_repo(llvm, "llvm-project")
 
 register_toolchains("@llvm//toolchain:all")

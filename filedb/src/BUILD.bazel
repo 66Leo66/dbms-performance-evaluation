@@ -5,5 +5,10 @@ cc_binary(
     srcs = ["main.cpp"],
     copts = [
         "-std=c++2c"
-    ]
+    ],
+    deps = [
+        "@fmt//:fmt",
+        "@spdlog//:spdlog",
+        "@cli11//:cli11"
+    ],
 )
