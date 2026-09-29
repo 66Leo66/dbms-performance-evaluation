@@ -1,0 +1,9 @@
+module(name = "filedb", version = "1.0")
+
+bazel_dep(name = "rules_cc", version = "0.2.25")
+bazel_dep(name = "llvm", version = "0.8.24")
+
+llvm = use_extension("@llvm//extensions:llvm.bzl", "llvm")
+llvm.version(llvm_version = "23.1.0")
+
+register_toolchains("@llvm//toolchain:all")
