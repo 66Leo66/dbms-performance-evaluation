@@ -9,6 +9,9 @@ cc_binary(
     deps = [
         "@fmt//:fmt",
         "@spdlog//:spdlog",
-        "@cli11//:cli11"
+        "@cli11//:cli11",
+        "@doctest//doctest:doctest"
     ],
 )
+
+

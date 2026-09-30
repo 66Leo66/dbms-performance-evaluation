@@ -12,5 +12,8 @@
 /.aswb/
 /.clwb/
 
+# Default filedb data directory
+/dbdata/
+
 # Generated compile commands
 compile_commands.json
