@@ -11,4 +11,4 @@ run *ARGS:
   cd filedb/ && bazel run //src:filedb -- {{ARGS}}
 
 refresh-compile-commands:
-  cd filedb/ && bazel build @hedron_compile_commands//:refresh_all
+  cd filedb/ && bazel run @hedron_compile_commands//:refresh_all
