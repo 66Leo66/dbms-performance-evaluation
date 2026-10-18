@@ -1,0 +1,34 @@
+backend,iteration,phase,seconds,milliseconds,raw_timing
+FileDB,0,warmup,3.544979277,3544.000,Execution took 3.544979277 seconds (3544 ms).
+FileDB,1,trial,3.209975405,3209.000,Execution took 3.209975405 seconds (3209 ms).
+FileDB,2,trial,3.207203208,3207.000,Execution took 3.207203208 seconds (3207 ms).
+FileDB,3,trial,3.171295548,3171.000,Execution took 3.171295548 seconds (3171 ms).
+FileDB,4,trial,3.109734350,3109.000,Execution took 3.10973435 seconds (3109 ms).
+FileDB,5,trial,3.184136049,3184.000,Execution took 3.184136049 seconds (3184 ms).
+FileDB,6,trial,3.216190354,3216.000,Execution took 3.216190354 seconds (3216 ms).
+FileDB,7,trial,3.136426081,3136.000,Execution took 3.136426081 seconds (3136 ms).
+FileDB,8,trial,3.163810028,3163.000,Execution took 3.163810028 seconds (3163 ms).
+FileDB,9,trial,3.425423368,3425.000,Execution took 3.425423368 seconds (3425 ms).
+FileDB,10,trial,3.133787239,3133.000,Execution took 3.133787239 seconds (3133 ms).
+PostgreSQL,0,warmup,23.504271000,23504.271,时间：23504.271 ms (00:23.504)
+PostgreSQL,1,trial,13.479174000,13479.174,时间：13479.174 ms (00:13.479)
+PostgreSQL,2,trial,13.468588000,13468.588,时间：13468.588 ms (00:13.469)
+PostgreSQL,3,trial,15.099836000,15099.836,时间：15099.836 ms (00:15.100)
+PostgreSQL,4,trial,16.104479000,16104.479,时间：16104.479 ms (00:16.104)
+PostgreSQL,5,trial,13.473875000,13473.875,时间：13473.875 ms (00:13.474)
+PostgreSQL,6,trial,13.353858000,13353.858,时间：13353.858 ms (00:13.354)
+PostgreSQL,7,trial,15.534304000,15534.304,时间：15534.304 ms (00:15.534)
+PostgreSQL,8,trial,15.758767000,15758.767,时间：15758.767 ms (00:15.759)
+PostgreSQL,9,trial,24.634206000,24634.206,时间：24634.206 ms (00:24.634)
+PostgreSQL,10,trial,14.866934000,14866.934,时间：14866.934 ms (00:14.867)
+openGauss,0,warmup,32.711798000,32711.798,时间：32711.798 ms (00:32.712)
+openGauss,1,trial,57.269647000,57269.647,时间：57269.647 ms (00:57.270)
+openGauss,2,trial,24.057690000,24057.690,时间：24057.690 ms (00:24.058)
+openGauss,3,trial,21.992102000,21992.102,时间：21992.102 ms (00:21.992)
+openGauss,4,trial,22.075825000,22075.825,时间：22075.825 ms (00:22.076)
+openGauss,5,trial,23.559072000,23559.072,时间：23559.072 ms (00:23.559)
+openGauss,6,trial,24.829301000,24829.301,时间：24829.301 ms (00:24.829)
+openGauss,7,trial,24.495727000,24495.727,时间：24495.727 ms (00:24.496)
+openGauss,8,trial,23.576631000,23576.631,时间：23576.631 ms (00:23.577)
+openGauss,9,trial,23.887757000,23887.757,时间：23887.757 ms (00:23.888)
+openGauss,10,trial,25.162105000,25162.105,时间：25162.105 ms (00:25.162)
