@@ -4,11 +4,21 @@
 default:
   just --list
 
-build:
-  cd filedb/ && bazel build //src:filedb
+# Build Debug
+debug:
+    cmake -S filedb -B filedb/cmake-build-debug-wsl -DCMAKE_BUILD_TYPE=Debug
+    cmake --build filedb/cmake-build-debug-wsl --parallel
 
-run *ARGS:
-  cd filedb/ && bazel run //src:filedb -- {{ARGS}}
+# Build Release
+release:
+    cmake -S filedb -B filedb/cmake-build-release-wsl -DCMAKE_BUILD_TYPE=Release
+    cmake --build filedb/cmake-build-release-wsl --parallel
 
-refresh-compile-commands:
-  cd filedb/ && bazel run @hedron_compile_commands//:refresh_all
+# Build Debug and run with arguments
+run-debug *args: debug
+    ./filedb/cmake-build-debug-wsl/FileDB {{args}}
+
+# Build Release and run with arguments
+run-release *args: release
+    ./filedb/cmake-build-release-wsl/FileDB {{args}}
+

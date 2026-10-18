@@ -1,0 +1,9 @@
+# IDE project and workspace files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Generated PDF documents
+*.pdf
