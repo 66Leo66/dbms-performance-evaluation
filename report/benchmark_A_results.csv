@@ -1,0 +1,58 @@
+backend,iteration,phase,seconds,milliseconds,raw_timing
+FileDB,0,warmup,1.756729403,1756.000,Execution took 1.756729403 seconds (1756 ms).
+FileDB,1,trial,1.530191794,1530.000,Execution took 1.530191794 seconds (1530 ms).
+FileDB,2,trial,1.537909026,1537.000,Execution took 1.537909026 seconds (1537 ms).
+FileDB,3,trial,1.557114052,1557.000,Execution took 1.557114052 seconds (1557 ms).
+FileDB,4,trial,1.545028769,1545.000,Execution took 1.545028769 seconds (1545 ms).
+FileDB,5,trial,1.529719234,1529.000,Execution took 1.529719234 seconds (1529 ms).
+FileDB,6,trial,1.547585448,1547.000,Execution took 1.547585448 seconds (1547 ms).
+FileDB,7,trial,1.534115634,1534.000,Execution took 1.534115634 seconds (1534 ms).
+FileDB,8,trial,1.535213388,1535.000,Execution took 1.535213388 seconds (1535 ms).
+FileDB,9,trial,1.535467489,1535.000,Execution took 1.535467489 seconds (1535 ms).
+FileDB,10,trial,1.562400361,1562.000,Execution took 1.562400361 seconds (1562 ms).
+PostgreSQL,0,warmup,7.214165000,7214.165,"
+时间：7214.165 ms (00:07.214)"
+PostgreSQL,1,trial,0.258872000,258.872,"
+时间：258.872 ms"
+PostgreSQL,2,trial,0.226836000,226.836,"
+时间：226.836 ms"
+PostgreSQL,3,trial,0.230464000,230.464,"
+时间：230.464 ms"
+PostgreSQL,4,trial,0.226640000,226.640,"
+时间：226.640 ms"
+PostgreSQL,5,trial,0.244335000,244.335,"
+时间：244.335 ms"
+PostgreSQL,6,trial,0.234025000,234.025,"
+时间：234.025 ms"
+PostgreSQL,7,trial,0.241785000,241.785,"
+时间：241.785 ms"
+PostgreSQL,8,trial,0.239398000,239.398,"
+时间：239.398 ms"
+PostgreSQL,9,trial,0.235145000,235.145,"
+时间：235.145 ms"
+PostgreSQL,10,trial,0.224678000,224.678,"
+时间：224.678 ms
+"
+openGauss,0,warmup,23.431239000,23431.239,"
+时间：23431.239 ms (00:23.431)"
+openGauss,1,trial,1.320420000,1320.420,"
+时间：1320.420 ms (00:01.320)"
+openGauss,2,trial,1.234129000,1234.129,"
+时间：1234.129 ms (00:01.234)"
+openGauss,3,trial,1.198993000,1198.993,"
+时间：1198.993 ms (00:01.199)"
+openGauss,4,trial,1.241051000,1241.051,"
+时间：1241.051 ms (00:01.241)"
+openGauss,5,trial,1.248459000,1248.459,"
+时间：1248.459 ms (00:01.248)"
+openGauss,6,trial,1.206614000,1206.614,"
+时间：1206.614 ms (00:01.207)"
+openGauss,7,trial,1.202418000,1202.418,"
+时间：1202.418 ms (00:01.202)"
+openGauss,8,trial,1.209007000,1209.007,"
+时间：1209.007 ms (00:01.209)"
+openGauss,9,trial,1.206873000,1206.873,"
+时间：1206.873 ms (00:01.207)"
+openGauss,10,trial,1.189141000,1189.141,"
+时间：1189.141 ms (00:01.189)
+"
