@@ -22,3 +22,27 @@ run-debug *args: debug
 run-release *args: release
     ./filedb/cmake-build-release-wsl/FileDB {{args}}
 
+rebuild-pg:
+    uv run --script dataset/import_data.py --data-dir dataset/tsv --dsn "postgresql://postgres:Gauss%40123@localhost:10001/postgres"
+
+rebuild-gauss:
+    uv run --script dataset/import_data.py --data-dir dataset/tsv --dsn "postgresql://gaussdb:Gauss%40123@localhost:10002/postgres"
+
+[parallel]
+rebuild-db: rebuild-pg rebuild-gauss
+
+connect-pg:
+    psql "postgresql://postgres:Gauss%40123@localhost:10001/postgres"
+
+connect-gauss:
+    psql "postgresql://gaussdb:Gauss%40123@localhost:10002/postgres"
+
+download-tsv:
+    wget https://datasets.imdbws.com/title.basics.tsv.gz -O- | gzip -dv > dataset/tsv/title.basics.tsv
+    wget https://datasets.imdbws.com/name.basics.tsv.gz -O- | gzip -dv > dataset/tsv/name.basics.tsv
+    wget https://datasets.imdbws.com/title.principals.tsv.gz -O- | gzip -dv > dataset/tsv/title.principals.tsv
+
+rebuild-tsv:
+    cp -v dataset/backup_tsv/name.basics.tsv dataset/tsv/name.basics.tsv
+    cp -v dataset/backup_tsv/title.basics.tsv dataset/tsv/title.basics.tsv
+    cp -v dataset/backup_tsv/title.principals.tsv dataset/tsv/title.principals.tsv
